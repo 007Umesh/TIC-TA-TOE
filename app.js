@@ -58,7 +58,7 @@ let winnerCheck=()=>{
                 }
             }
             else{
-                Winner.innerText="Match drawn";
+               drawMatch();
             }
         }
     }
@@ -80,7 +80,7 @@ const resetGame =()=>{
 resetBtn.addEventListener("click",resetGame);
 newGame.addEventListener("click",resetGame);
 
-/*const drawMatch =()=>{
+const drawMatch =()=>{
     idx=0;
     for(let box of boxes){
         if(pos1!= pos2 && pos2!= pos3){
@@ -88,7 +88,7 @@ newGame.addEventListener("click",resetGame);
         }
         idx++;
     }
-} */
+} 
 
 const boxColor=()=>{
     idx=0;
